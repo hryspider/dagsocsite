@@ -26,7 +26,9 @@ export default function RootLayout({
       className={`${elmsSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        Hello :3
+        <a>SUSU</a>
+        <a>Discord</a>
+        <a>Instagram</a>
         {children}
         </body>
     </html>
