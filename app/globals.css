@@ -59,5 +59,40 @@ h2 {
 .pixelicon {
   image-rendering: crisp-edges;
   width: 5rem;
-  /* filter:brightness(1000%); */
+}
+
+.colourcycle{
+  animation: colourcycle 2s infinite linear;
+}
+
+.gradientbg{
+  background-image: linear-gradient(45deg, rgb(63, 32, 95), rgb(34, 38, 145));
+}
+
+.parallax1{
+  image-rendering: crisp-edges;
+  background-image: url("/pixelfg.png");
+  min-height: 64px;
+  background-size: contain;
+  background-repeat: repeat-x;
+  animation: scrolling 10s infinite linear;
+}
+
+.parallax2{
+  image-rendering: crisp-edges;
+  background-image: url("/clouds.png");
+  min-height: 64px;
+  background-size: contain;
+  background-repeat: repeat-x;
+  animation: scrolling 20s infinite linear;
+}
+
+@keyframes scrolling {
+  from {background-position-x: 0;}
+  to {background-position-x: -1024px;}
+}
+
+@keyframes colourcycle {
+  from {filter:hue-rotate(0deg)}
+  to {filter: hue-rotate(360deg)}
 }

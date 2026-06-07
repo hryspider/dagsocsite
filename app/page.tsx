@@ -1,11 +1,15 @@
+"use client";
 import Image from "next/image";
-import { motion } from "motion/react"
 import Link from 'next/link';
+import { motion } from "motion/react";
+
+
 
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-slate-950">
-      <div className="w-full bg-slate-600 flex flex-row justify-center py-16">
+      <div className="w-full gradientbg">
+      <div className=" flex flex-row justify-center py-16">
           <Image
           // className="dark:invert"
           src="/dagsoclogo.svg"
@@ -17,6 +21,9 @@ export default function Home() {
             <h1 className="max-w-xs text-black dark:text-indigo-50">DAGsoc</h1>
             <h3 className="max-w-xs text-slate-900 dark:text-slate-400">Digital Art & Gamedev Society</h3>
           </div>
+        </div>
+        <div className="w-full parallax2"></div>
+        <div className="w-full parallax1"></div>
         </div>
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-start px-16 sm:items-start">
         <h1>Welcome to DAGsoc!</h1>
@@ -47,6 +54,7 @@ export default function Home() {
             Past Events
           </Link>
           </div>
+        <h1>Test</h1><h1>Test</h1><h1>Test</h1><h1>Test</h1><h1>Test</h1><h1>Test</h1>
         
         {/* <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
