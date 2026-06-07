@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { motion } from "motion/react"
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -13,15 +14,15 @@ export default function Home() {
           height={20}
           priority/>
           <div className="flex flex-col justify-center">
-            <h1 className="max-w-xs text-4xl font-extrabold text-black dark:text-indigo-50">DAGsoc</h1>
-            <h3 className="max-w-xs text-lg font-semibold text-slate-900 dark:text-slate-400">Digital Art & Gamedev Society</h3>
+            <h1 className="max-w-xs text-black dark:text-indigo-50">DAGsoc</h1>
+            <h3 className="max-w-xs text-slate-900 dark:text-slate-400">Digital Art & Gamedev Society</h3>
           </div>
         </div>
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-start px-16 sm:items-start">
-        
-        <div className="py-10">DAGsoc aims to promote and share digital art and game development on and off campus. With frequent art challanges, game jams, talks and excursions, we welcome everyone who is interested in not only game development, but all forms of digital art! Everyone is welcome, regardless of what subject they are studying or their experience! </div>
+        <h1>Welcome to DAGsoc!</h1>
+        <div className="">DAGsoc aims to promote and share digital art and game development on and off campus. With frequent art challanges, game jams, talks and excursions, we welcome everyone who is interested in not only game development, but all forms of digital art! Everyone is welcome, regardless of what subject they are studying or their experience! </div>
         <a
-            className="flex button justify-center hover:border-transparent hover:bg-slate/[.04] dark:border-white/[.145]  dark:hover:bg-white dark:hover:text-slate-800"
+            className="mainbutton flex button justify-center hover:border-transparent hover:bg-slate/[.04] dark:border-white/[.145]  dark:hover:bg-white dark:hover:text-slate-800"
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.susu.org/groups/digital-arts-and-gamedev-society"
@@ -30,19 +31,21 @@ export default function Home() {
           </a>
         <div className="flex flex-column w-full">
           <a
-            className="flex button justify-center hover:border-transparent hover:bg-slate/[.04] dark:border-white/[.145] dark:hover:bg-blue-600"
+          href="/about"
+            className="mainbutton flex button justify-center hover:border-transparent hover:bg-slate/[.04] dark:border-white/[.145] dark:hover:bg-blue-600"
             target="_blank"
             rel="noopener noreferrer"
           >
             About
           </a>
-        <a
-            className="flex button justify-center hover:border-transparent hover:bg-slate/[.04] dark:border-white/[.145] dark:hover:bg-blue-600"
+        <Link
+            href="/jams"
+            className="mainbutton flex button justify-center hover:border-transparent hover:bg-slate/[.04] dark:border-white/[.145] dark:hover:bg-blue-600"
             target="_blank"
             rel="noopener noreferrer"
           >
             Past Events
-          </a>
+          </Link>
           </div>
         
         {/* <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Elms_Sans} from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const elmsSans = Elms_Sans({
@@ -7,6 +8,9 @@ const elmsSans = Elms_Sans({
   subsets: ["latin"],
 });
 
+const PAGE_SUSU = "https://www.susu.org/groups/digital-arts-and-gamedev-society";
+const PAGE_DISCORD = "https://discord.gg/kCwz5wxM";
+const PAGE_INSTA = "https://www.instagram.com/uos_dagsoc/";
 
 
 
@@ -26,9 +30,11 @@ export default function RootLayout({
       className={`${elmsSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <a>SUSU</a>
-        <a>Discord</a>
-        <a>Instagram</a>
+        <div className="flex w-full flex-row justify-end items-center">
+          <a href={PAGE_SUSU}><img src="/susu.png" className="pixelicon brightness-1000 transition duration-50 hover:brightness-100"/></a>
+          <a href={PAGE_DISCORD}><img src="/discord.png" className="pixelicon brightness-1000 transition duration-50 hover:brightness-100"/></a>
+          <a href={PAGE_INSTA}><img src="/insta.png" className="pixelicon brightness-1000 transition duration-50 hover:brightness-100"/></a>
+        </div>
         {children}
         </body>
     </html>
