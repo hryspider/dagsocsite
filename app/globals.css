@@ -39,11 +39,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms; 
 
-
-  :hover {
-  border-color: transparent; 
-  }
-
 }
 h1 {
   display: block;
@@ -73,6 +68,8 @@ h2 {
   image-rendering: crisp-edges;
   background-image: url("/pixelfg.png");
   min-height: 64px;
+  max-height: 64px;
+  min-width: 1024px;
   background-size: contain;
   background-repeat: repeat-x;
   animation: scrolling 10s infinite linear;
@@ -82,9 +79,11 @@ h2 {
   image-rendering: crisp-edges;
   background-image: url("/clouds.png");
   min-height: 64px;
+  min-width: 1024px;
   background-size: contain;
   background-repeat: repeat-x;
   animation: scrolling 20s infinite linear;
+  justify-self:end;
 }
 
 @keyframes scrolling {
@@ -95,4 +94,34 @@ h2 {
 @keyframes colourcycle {
   from {filter:hue-rotate(0deg)}
   to {filter: hue-rotate(360deg)}
+}
+
+
+
+.jamimage{
+  font-size: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  transition-property: font-size, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 30ms; 
+  /* display: flex; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.jamimage:hover {
+  filter: brightness(120%);
+  color:rgb(115, 210, 255);
+}
+
+.line{
+  width: 100%;
+  height: 5px;
+  border-bottom: 3px solid #ededed;
 }
