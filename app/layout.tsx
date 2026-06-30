@@ -3,8 +3,6 @@ import { Elms_Sans} from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import Link from 'next/link';
-import Layout from '../components/layout'
-import NestedLayout from '../components/nested-layout'
 
 
 const elmsSans = Elms_Sans({
