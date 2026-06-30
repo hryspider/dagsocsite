@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-slate-950">
       
-      <div className="w-full bg-slate-600 flex flex-row justify-center pt-28 py-8">
+      <div className="w-full gradientbg flex flex-row justify-center pt-28 py-8">
         <h1>Past Events</h1>
         </div>
       <main className="text-center flex flex-1 w-full flex-col items-center justify-center">
