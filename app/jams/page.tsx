@@ -114,7 +114,7 @@ export default function Home() {
         <h1>Past Events</h1>
         </div>
       <main className="text-center flex flex-1 w-full flex-col items-center justify-center py-2">
-        {jam_data_by_year.keys().map(key =>
+        {Array.from(jam_data_by_year.keys()).map(key =>
           <div>
             <h1 className="w-full gradientbg flex flex-col items-center">{key}</h1>
             {jam_data_by_year.get(key)!.map(GenerateJam)}
