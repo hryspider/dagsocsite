@@ -89,9 +89,23 @@ function GenerateJam(jam:Jam){
   )
 }
 
+const splitByYear = (jams:Jam[]) => {
+  var result : Map<string, Jam[]> = new Map
+  var sortedList : Array<Jam>=  jams.sort((a,b) => b.start_date.getTime() - a.start_date.getTime())
+  for (var jam of sortedList){
+    var year = jam.start_date.getFullYear().toString()
+    if (result.has(year)){
+      result.get(year)?.push(jam)
+    }
+    else{
+      result.set(year, [jam])
+    }
+  }
+  return result
+};
+
 export default function Home() {
-  var jam_data_sorted = jam_data.sort((a,b) => b.start_date.getTime() - a.start_date.getTime())
-  var jam_data_by_year = Map.groupBy(jam_data_sorted, ({start_date}) => start_date.getFullYear())
+  var jam_data_by_year = splitByYear(jam_data)
   var years = new Set(jam_data.map(a => a.start_date.getFullYear))
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-slate-950">
