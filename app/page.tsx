@@ -56,7 +56,7 @@ export default function Home() {
             // target="_blank"
             rel="noopener noreferrer"
           >
-            Past Events
+            Our Events
           </Link>
           </div>
       </main>
