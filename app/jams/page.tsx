@@ -52,7 +52,7 @@ const jam_data : Array<Jam> = [
   {
     name: "Summer Jam 2026",
     description : "A summer holiday jam for everyone, prospective students included!",
-    theme : "TBA",
+    theme : "Fixed/Unfixed",
     image_source: "/jams/summerjamthumb.png",
     start_date: new Date(2026, 7, 9, 17),
     duration_hours : 840,
