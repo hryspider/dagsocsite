@@ -1,7 +1,6 @@
 "use client";
-// import Image from "next/image";
 import { motion } from "motion/react"
-// import Link from 'next/link';
+
 
 type Jam = {
   name : string;
@@ -111,7 +110,7 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-slate-950">
       
       <div className="w-full gradientbg flex flex-row justify-center pt-28 py-8">
-        <h1>Past Events</h1>
+        <h1>Our Events</h1>
         </div>
       <main className="text-center flex flex-1 w-full flex-col items-center justify-center py-2">
         {Array.from(jam_data_by_year.keys()).map(key =>

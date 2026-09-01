@@ -36,7 +36,7 @@ export default function RootLayout({
           <div className="space-x-4 flex flex-row items-center">
             <Link href="/"><img src="/pixeldag.png" className="pixelicon colourcycle transition duration-50 hover:brightness-1000"/></Link>
             <Link href="/committee">Committee</Link>
-            <Link href="/jams">Past Events</Link>
+            <Link href="/jams">Our Events</Link>
           </div>
           <div className="justify-end flex flex-row">
             <a href={PAGE_SUSU}><img src="/susu.png" className="pixelicon brightness-1000 transition duration-50 hover:brightness-100"/></a>
