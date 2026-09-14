@@ -30,7 +30,7 @@ export default function Home() {
          
          <a className="flex grid justify-center pb-10" href="/scratchjam26">
           <Image src="/jams/scratchjam26animated.gif" width={600} height={50} alt="Scratch Jam 26 Logo"></Image>
-          <div className="text-center text-4xl font-bold">This Saturday!</div>
+          <div className="text-center text-4xl font-bold">This Sunday!</div>
         </a>
 
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
