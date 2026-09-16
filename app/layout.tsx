@@ -11,7 +11,7 @@ const elmsSans = Elms_Sans({
 });
 
 const PAGE_SUSU = "https://www.susu.org/groups/digital-arts-and-gamedev-society";
-const PAGE_DISCORD = "https://discord.gg/kCwz5wxM";
+const PAGE_DISCORD = "https://discord.gg/Snhmz2C85X";
 const PAGE_INSTA = "https://www.instagram.com/uos_dagsoc/";
 
 
@@ -47,7 +47,7 @@ export default function RootLayout({
         {children}
         <a className="font-sans flex justify-center py-3" href="mailto:dagsoc.uos@gmail.com">Email us</a>
         <div className="font-sans flex justify-center py-3">Copyright © 2026 Southampton Digital Art and Gamedev Society</div>
-        <div className="font-sans flex justify-center py-3 text-slate-600">Last updated 14th September 2026</div>
+        <div className="font-sans flex justify-center py-3 text-slate-600">Last updated 16th September 2026</div>
         </body>
     </html>
   );
