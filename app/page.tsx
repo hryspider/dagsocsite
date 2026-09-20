@@ -28,10 +28,6 @@ export default function Home() {
       
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-center px-16">
          
-         <a className="flex grid justify-center pb-10" href="/scratchjam26">
-          <Image src="/jams/scratchjam26animated.gif" width={600} height={50} alt="Scratch Jam 26 Logo"></Image>
-          <div className="text-center text-4xl font-bold">This Sunday!</div>
-        </a>
 
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
           <h1>Welcome to DAGsoc!</h1>
@@ -65,6 +61,9 @@ export default function Home() {
             Our Events
           </Link>
           </div>
+        <a className="flex grid justify-center pb-10" href="https://discord.gg/Snhmz2C85X">
+          <Image className="" src="/discordpromo.png" width={600} height={50} alt="Join our discord!"></Image>
+        </a>
       </main>
     </div>
   );

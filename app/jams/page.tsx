@@ -56,6 +56,15 @@ const jam_data : Array<Jam> = [
     start_date: new Date(2026, 7, 9, 17),
     duration_hours : 840,
     site : "https://itch.io/jam/dagsoc-summer-jam-2026"
+  },
+  {
+    name: "Scratch Jam 2026",
+    description: "Scratch jam's back and bigger than ever!",
+    theme: "Hands",
+    image_source: "/jams/scratchjam26.png",
+    start_date: new Date(2026, 8, 20, 12),
+    duration_hours: 3,
+    site: "/scratchjam26"
   }
 ];
 

@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <div className="font-sans fixed z-100 bg-black flex w-full flex-row justify-between items-center px-10">
           <div className="space-x-4 flex flex-row items-center">
-            <Link href="/"><img src="/pixeldag.png" className="pixelicon colourcycle transition duration-50 hover:brightness-1000"/></Link>
+            <Link href="/"><img src="/pixeldag.gif" className="pixelicon brightness-0 invert transition duration-50 hover:brightness-100"/></Link>
             <Link href="/committee">Committee</Link>
             <Link href="/jams">Our Events</Link>
           </div>
@@ -47,7 +47,7 @@ export default function RootLayout({
         {children}
         <a className="font-sans flex justify-center py-3" href="mailto:dagsoc.uos@gmail.com">Email us</a>
         <div className="font-sans flex justify-center py-3">Copyright © 2026 Southampton Digital Art and Gamedev Society</div>
-        <div className="font-sans flex justify-center py-3 text-slate-600">Last updated 16th September 2026</div>
+        <div className="font-sans flex justify-center py-3 text-slate-600">Last updated 20th September 2026</div>
         </body>
     </html>
   );

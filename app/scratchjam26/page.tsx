@@ -21,7 +21,7 @@ export default function Home() {
           <li>🗺️ Building 58, Room 1047 (Highfield Campus)</li>
           <li>(So for ECSS folks, you're going to have a fun weekend!)</li>
       </ol>
-      <p>See you there!</p>
+      <a className="pt-10 text-4xl font-bold text-teal-400" href="https://scratch.mit.edu/users/scratchjam25dag/favorites/">See projects</a>
       </main>
     </div>
   );
