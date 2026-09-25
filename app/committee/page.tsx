@@ -5,7 +5,7 @@ import Member from './member';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-slate-950">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-slate-950">
       <div className="w-full gradientbg flex flex-row justify-center pt-28 py-8">
         <h1>About the Committee</h1>
         </div>

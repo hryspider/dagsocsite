@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-slate-950">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-slate-950">
       
       <div className="w-full gradientbg flex flex-row justify-center pt-28 py-8">
         <Image src="/jams/scratchjam26.png" height={50} width={400} alt="Scratch Jam 26 Logo."></Image>

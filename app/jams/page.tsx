@@ -85,7 +85,7 @@ function GenerateJam(jam:Jam){
     // date_str = (jam.start_date.getTime() - new Date().getTime())
   }
   return (
-    <motion.div className="jamimage" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+    <motion.div id={jam.name} className="jamimage" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <a className="jamimage bg-slate-950" href={jam.site}><h2>{jam.name}</h2>
         <p className="text-l italic">{coming_soon}</p>
         <p className="text-[15px] tracking-tighter">{date_str}</p>
@@ -116,7 +116,7 @@ export default function Home() {
   var jam_data_by_year = splitByYear(jam_data)
   var years = new Set(jam_data.map(a => a.start_date.getFullYear))
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-slate-950">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-slate-950">
       
       <div className="w-full gradientbg flex flex-row justify-center pt-28 py-8">
         <h1>Our Events</h1>

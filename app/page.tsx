@@ -7,19 +7,18 @@ import { motion } from "motion/react";
 
 export default function Home() {
   return (
-    <div className="py-16  flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-slate-950">
+    <div className="py-16  flex flex-col flex-1 items-center justify-center font-sans bg-slate-950">
       <motion.div className="w-full gradientbg" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <div className=" flex flex-row justify-center py-16">
           <Image
-          // className="dark:invert"
           src="/dagsoclogo.svg"
           alt="DAGsoc logo"
           width={200}
           height={20}
           priority/>
           <div className="flex flex-col justify-center">
-            <h1 className="max-w-xs text-black dark:text-indigo-50">DAGsoc</h1>
-            <h3 className="max-w-xs text-slate-900 dark:text-slate-400">Digital Art & Gamedev Society</h3>
+            <h1 className="max-w-xs text-indigo-50">DAGsoc</h1>
+            <h3 className="max-w-xs text-slate-400">Digital Art & Gamedev Society</h3>
           </div>
         </div>
         <div className="w-full parallax2"></div>
@@ -31,12 +30,12 @@ export default function Home() {
 
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
           <h1>Welcome to DAGsoc!</h1>
-          <div className="">DAGsoc aims to promote and share digital art and game development on and off campus. With frequent art challanges, game jams, talks and excursions, we welcome everyone who is interested in not only game development, but all forms of digital art! Everyone is welcome, regardless of what subject they are studying or their experience! </div>
+          <div className="pb-10">DAGsoc aims to promote and share digital art and game development on and off campus. With frequent art challanges, game jams, talks and excursions, we welcome everyone who is interested in not only game development, but all forms of digital art! Everyone is welcome, regardless of what subject they are studying or their experience! </div>
         </motion.div>
         
         
         <a
-            className="mainbutton flex button justify-center hover:border-transparent hover:bg-slate/[.04] dark:border-white/[.145]  dark:hover:bg-white dark:hover:text-slate-800"
+            className="mainbutton flex button justify-center hover:border-transparent border-white/[.145] hover:bg-white hover:text-slate-800"
             // target="_blank"
             rel="noopener noreferrer"
             href="https://www.susu.org/groups/digital-arts-and-gamedev-society"
@@ -46,7 +45,7 @@ export default function Home() {
         <div className="flex flex-column w-full">
           <a
           href="/committee"
-            className="mainbutton flex button justify-center hover:border-transparent hover:bg-slate/[.04] dark:border-white/[.145] dark:hover:bg-blue-600"
+            className="mainbutton flex button justify-center hover:border-transparent border-white/[.145] hover:bg-blue-600"
             // target="_blank"
             rel="noopener noreferrer"
           >
@@ -54,7 +53,7 @@ export default function Home() {
           </a>
         <Link
             href="/jams"
-            className="mainbutton flex button justify-center hover:border-transparent hover:bg-slate/[.04] dark:border-white/[.145] dark:hover:bg-blue-600"
+            className="mainbutton flex button justify-center hover:border-transparent border-white/[.145] hover:bg-blue-600"
             // target="_blank"
             rel="noopener noreferrer"
           >

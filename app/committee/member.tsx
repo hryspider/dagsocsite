@@ -13,7 +13,7 @@ export default function Member({name, role, games, tools=[]}: MemberData){
     <div className="flex flex-col items-center py-10">
         <div className="flex flex-row mainbutton">
         <h2 className="text-[32px]">{name}</h2>
-        <p className="text-[32px] text-slate-900 dark:text-slate-400 px-3">({role})</p>
+        <p className="text-[32px] text-slate-400 px-3">({role})</p>
         </div>
         <p><strong>Favourite games:</strong> {games.join(", ")}</p>
         <p><strong>Favourite tools:</strong></p>
