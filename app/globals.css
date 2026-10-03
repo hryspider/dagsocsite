@@ -60,10 +60,9 @@ h2 {
 .parallax1{
   image-rendering: crisp-edges;
   background-image: url("/pixelfg.png");
-  min-height: 64px;
-  max-height: 64px;
-  min-width: 1024px;
-  background-size: contain;
+  width: 100%;
+  height: 64px;
+  background-size: auto 64px;
   background-repeat: repeat-x;
   animation: scrolling 10s infinite linear;
 }
@@ -71,12 +70,12 @@ h2 {
 .parallax2{
   image-rendering: crisp-edges;
   background-image: url("/clouds.png");
-  min-height: 64px;
-  min-width: 1024px;
-  background-size: contain;
+  width: 100%;
+  height: 64px;
+  background-size: auto 64px;
   background-repeat: repeat-x;
   animation: scrolling 20s infinite linear;
-  justify-self:end;
+  justify-self:start;
 }
 
 @keyframes scrolling {
