@@ -32,8 +32,10 @@ export default function Home() {
           <h1>Welcome to DAGsoc!</h1>
           <div className="pb-10">DAGsoc aims to promote and share digital art and game development on and off campus. With frequent art challanges, game jams, talks and excursions, we welcome everyone who is interested in not only game development, but all forms of digital art! Everyone is welcome, regardless of what subject they are studying or their experience! </div>
         </motion.div>
-        
-        
+
+        <a className="flex grid justify-center pb-10" href="/dagparty">
+          <Image className="" src="/jams/dagparty_frontpage.png" width={400} height={50} alt="DAGParty Logo"></Image>
+        </a>
         <a
             className="mainbutton flex button justify-center hover:border-transparent border-white/[.145] hover:bg-white hover:text-slate-800"
             // target="_blank"
@@ -60,9 +62,6 @@ export default function Home() {
             Our Events
           </Link>
           </div>
-        <a className="flex grid justify-center pb-10" href="https://discord.gg/Snhmz2C85X">
-          <Image className="" src="/discordpromo.png" width={600} height={50} alt="Join our discord!"></Image>
-        </a>
       </main>
     </div>
   );
