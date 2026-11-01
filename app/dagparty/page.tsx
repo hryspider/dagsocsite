@@ -19,7 +19,7 @@ export default function Home() {
         <p className="">We've made a board game framework in <a href="https://godotengine.org/download/archive/" className="text-teal-300">Godot</a> that will house the minigames.</p>
         <Image className="w-full" src={"/dagparty_board.png"} width={500} height={100} alt={"Gamplay of DAGparty's board"}></Image>
         <p className="pt-5 pb-15">Everything on how to make a minigame is explained in the project's <strong>README.md</strong> file. Each minigame's data will be stored in their own folder inside the project's "minigames" folder.</p>
-        <a className="text-teal-300 p-30 text-4xl pb-2" href="https://github.com/hryspider/dagsoc-party">Download the project!</a>
+        <a className="text-teal-300 text-4xl pb-2" href="https://github.com/hryspider/dagsoc-party">Download the project!</a>
         <div className="p-10"></div>
         {/* <p>Have you played Mario Party or Wii Party before?</p> */}
         {/* <p className="pt-10">A multiplayer board game with interspersed minigames that give you an advantage if won.</p> */}
