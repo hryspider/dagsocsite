@@ -65,6 +65,15 @@ const jam_data : Array<Jam> = [
     start_date: new Date(2026, 8, 20, 12),
     duration_hours: 3,
     site: "/scratchjam26"
+  },
+  {
+    name: "Festive Jam",
+    description: "The jolliest in-person jam yet!",
+    theme: "TBA",
+    image_source: "/jams/festivejam26logo.png",
+    start_date: new Date("November 29, 2026 10:00:00"),
+    duration_hours: 8,
+    site: "https://itch.io/jam/dagsoc-festive-jam"
   }
 ];
 
