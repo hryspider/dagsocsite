@@ -26,6 +26,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const buildDate = process.env.NEXT_PUBLIC_LAST_UPDATED_DATE;
   return (
     <html
       lang="en"
@@ -47,7 +48,7 @@ export default function RootLayout({
         {children}
         <a className="font-sans flex justify-center py-3" href="mailto:dagsoc.uos@gmail.com">Email us</a>
         <div className="font-sans flex justify-center py-3">Copyright © 2026 Southampton Digital Art and Gamedev Society</div>
-        <div className="font-sans flex justify-center py-3 text-slate-600">Last updated 5th November 2026</div>
+        <div className="font-sans flex justify-center py-3 text-slate-600">Last Updated: {buildDate}</div>
         </body>
     </html>
   );
